@@ -1,0 +1,32 @@
+How to install Python Multi Version on MAC OS
+≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠
+
+
+1. Install Brew 
+    Open Terminal paste this code:  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+2. Install Pyenv
+    brew install pyenv
+
+3. Install Python (with your version)
+    pyenv install (Python Version)
+    Example : pyenv install 3.8.19
+
+4. Make your shell "Terminal" run pyenv
+    Open Terminal "Make sure you're in home location directory"
+    paste this code :  vi .bash_profile  or  vi .zshrc
+    press "enter" to write
+    
+    Paste this code : if command -v pyenv 1>/dev/null 2>&1; then
+                        eval "$(pyenv init -)"
+                      fi
+    
+    press "esc" after write
+    press and hold " Shift + Z " for save [ Press double " Z " for save & quit ]
+
+5. Terminate your terminal
+    Check with command : python -V
+
+
+Thank You,
+Hopefully will help you,
